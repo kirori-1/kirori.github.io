@@ -1,7 +1,0 @@
-{
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": null,
-    "files.associations": {
-        "*.mdx": "markdown"
-    }
-} 
