@@ -7,5 +7,6 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
 	site: 'https://kirori-1.github.io/kirori.github.io/',
 	integrations: [mdx(), sitemap()],
+	 outDir: 'dist',
 	base: '/kirori.github.io/',
 });
