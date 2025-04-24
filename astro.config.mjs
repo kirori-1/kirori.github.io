@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https:///kirori.github.io",
+  site: "https:///kirori-1.github.io",
   output: "static",
   base: "/",
   integrations: [mdx(), sitemap()],
