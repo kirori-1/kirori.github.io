@@ -8,7 +8,9 @@
     "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
-    "astro": "^5.5.5",
+    "@astrojs/mdx": "^4.2.5",
+    "@astrojs/sitemap": "^3.3.1",
+    "astro": "^5.7.5",
     "gh-pages": "^5.0.0"
   },
   "description": "```sh yarn create astro@latest -- --template blog ```",
@@ -257,7 +259,7 @@
     "vfile": "^6.0.3",
     "vfile-location": "^5.0.3",
     "vfile-message": "^4.0.2",
-    "vite": "^6.2.3",
+    "vite": "^6.3.2",
     "vitefu": "^1.0.6",
     "web-namespaces": "^2.0.1",
     "which-pm-runs": "^1.1.0",

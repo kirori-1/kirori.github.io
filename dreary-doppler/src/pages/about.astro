@@ -1,62 +1,117 @@
-    ---
-    importAboutLayoutfrom'../layouts/AboutLayout.astro';
-    ---
-    <AboutLayouttitle=" 关于我 "description=" 了解更多关于我的信息 ">
-    <h1> 关于我 </h1>
-    <sectionclass="mb-8">
-    <h2> 👋你好！ </h2>
-    <p>
-    你好，我是 Kirori ！作为一名充满激情的全栈开发者，我专注于创造优雅且实用的数字体验。
-    我相信技术不仅能够解决问题，更能创造价值，连接人与人之间的距离。
-    </p>
-    </section>
-    <sectionclass="mb-8">
-    <h2> 🎯我的目标 </h2>
-    <p>
-    我致力于：
-    </p>
-    <ul>
-    <li> 打造用户友好的数字产品，让技术更好地服务生活 </li>
-    <li> 探索前沿技术，保持学习的热情和创新的精神 </li>
-    <li> 通过开源项目和技术分享，促进技术社区的交流与成长 </li>
-    <li> 将创意转化为现实，用代码构建理想中的数字世界 </li>
-    </ul>
-    </section>
-    <sectionclass="mb-8">
-    <h2> 🛠️技术栈 </h2>
-    <p>
-    我熟悉并使用的技术包括：
-    </p>
-    <ul>
-    <li> 前端： React,Vue,Astro,TypeScript,TailwindCSS</li>
-    <li> 后端： Node.js,Python,Express,FastAPI</li>
-    <li> 数据库： MongoDB,PostgreSQL,Redis</li>
-    <li> 开发工具： Docker,Git,VSCode,Webpack,Vite</li>
-    <li> 云服务： AWS,Vercel,Netlify</li>
-    </ul>
-    </section>
-    <sectionclass="mb-8">
-    <h2> 🌟项目经历 </h2>
-    <p>
-    我参与过的一些有趣项目：
-    </p>
-    <ul>
-    <li> 个人博客系统 - 使用 Astro 构建的现代化静态博客 </li>
-    <li> 在线协作工具 - 基于 WebSocket 的实时协作平台 </li>
-    <li> 智能数据分析平台 - 结合机器学习的可视化分析系统 </li>
-    </ul>
-    </section>
-    <sectionclass="mb-8">
-    <h2> 📫联系我 </h2>
-    <p>
-    如果你对我的项目感兴趣，或者想要交流合作，欢迎通过以下方式联系我：
-    </p>
-    <ul>
-    <li>GitHub:<ahref="https://github.com/kirori-1"target="_blank">@kirori-1</a></li>
-    <li>Email:qiloli762@gmail.com</li>
-    </ul>
-    <pclass="mt-4">
-    期待与你交流，一起探索技术的无限可能！
-    </p>
-    </section>
-    </AboutLayout>
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title="关于我" description="了解更多关于我的信息" />
+    <style>
+      main {
+        width: calc(100%-2em);
+        max-width: 100%;
+        margin: 0;
+      }
+      .prose {
+        width: 720px;
+        max-width: calc(100%-2em);
+        margin: auto;
+        padding: 1em;
+        color: rgb(var(--gray-dark));
+      }
+      .title {
+        margin-bottom: 1em;
+        padding: 1em0;
+        text-align: center;
+        line-height: 1;
+      }
+      .titleh1 {
+        margin: 000.5em0;
+      }
+      section {
+        margin-bottom: 2em;
+      }
+      sectionh2 {
+        margin-bottom: 1em;
+      }
+      ul {
+        list-style-type: disc;
+        padding-left: 1em;
+      }
+      li {
+        margin-bottom: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <article>
+        <div class="prose">
+          <div class="title">
+            <h1>关于我</h1>
+            <hr />
+          </div>
+          <section>
+            <h2>👋你好！</h2>
+            <p>
+              你好，我是 Kirori
+              ！作为一名充满激情的全栈开发者，我专注于创造优雅且实用的数字体验。
+              我相信技术不仅能够解决问题，更能创造价值，连接人与人之间的距离。
+            </p>
+          </section>
+          <section>
+            <h2>🎯我的目标</h2>
+            <p>我致力于：</p>
+            <ul>
+              <li>打造用户友好的数字产品，让技术更好地服务生活</li>
+              <li>探索前沿技术，保持学习的热情和创新的精神</li>
+              <li>通过开源项目和技术分享，促进技术社区的交流与成长</li>
+              <li>将创意转化为现实，用代码构建理想中的数字世界</li>
+            </ul>
+          </section>
+          <section>
+            <h2>🛠️技术栈</h2>
+            <p>我熟悉并使用的技术包括：</p>
+            <ul>
+              <li>前端： React,Vue,Astro,TypeScript,TailwindCSS</li>
+              <li>后端： Node.js,Python,Express,FastAPI</li>
+              <li>数据库： MongoDB,PostgreSQL,Redis</li>
+              <li>开发工具： Docker,Git,VSCode,Webpack,Vite</li>
+              <li>云服务： AWS,Vercel,Netlify</li>
+            </ul>
+          </section>
+          <section>
+            <h2>🌟项目经历</h2>
+            <p>我参与过的一些有趣项目：</p>
+            <ul>
+              <li>个人博客系统 - 使用 Astro 构建的现代化静态博客</li>
+              <li>在线协作工具 - 基于 WebSocket 的实时协作平台</li>
+              <li>智能数据分析平台 - 结合机器学习的可视化分析系统</li>
+            </ul>
+          </section>
+          <section>
+            <h2>📫联系我</h2>
+            <p>
+              如果你对我的项目感兴趣，或者想要交流合作，欢迎通过以下方式联系我：
+            </p>
+            <ul>
+              <li>
+                GitHub ： <a
+                  href="https://github.com/kirori-1"
+                  target="_blank"
+                  rel="noopener noreferrer">@kirori-1</a
+                >
+              </li>
+              <li>Email ： qiloli762@gmail.com</li>
+            </ul>
+            <p class="mt-4">期待与你交流，一起探索技术的无限可能！</p>
+          </section>
+        </div>
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>
