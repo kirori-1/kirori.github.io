@@ -16,6 +16,7 @@
   "description": "```sh yarn create astro@latest -- --template blog ```",
   "main": "index.js",
   "dependencies": {
+    "@astrojs/rss": "^4.0.11",
     "acorn": "^8.14.1",
     "ansi-align": "^3.0.1",
     "ansi-regex": "^6.1.0",
